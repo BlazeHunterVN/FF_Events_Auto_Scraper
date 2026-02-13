@@ -1,0 +1,16 @@
+{
+  "name": "ff-events-scraper",
+  "version": "1.0.0",
+  "description": "Auto-scrape FF Events from 8 regions and push to Google Sheets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --once",
+    "schedule": "node index.js --schedule",
+    "test": "node index.js --test --region vietnam"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.1"
+  }
+}
